@@ -230,9 +230,16 @@ void lr6() {
     }
 
     // Вывод измененного массива
-    printf("Rezultat:\n");
+    printf("Rezultat netransponirovannoy matricy:\n");
     for (i = 0; i < N; i++) {
         for (j = 0; j < K; j++) {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+ printf("Rezultat transponirovannoy matricy:\n");
+    for (j = 0; j < K; j++) {
+        for (i = 0; i < N; i++) {
             printf("%d ", arr[i][j]);
         }
         printf("\n");
