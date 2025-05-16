@@ -1,15 +1,19 @@
 #include <stdio.h>
-#include "os.h" 
+#include "lab.h" 
 
-int main() {
+
+int main() 
+{
     int choice;
     
-    do {
+    do
+    {
         menu();
-        printf("Vvesti nomer programy");
+        printf("Vvesti nomer programy\n");
         scanf("%d", &choice);
-        
-        switch(choice) {
+        getchar(); //гечар тут забирает символ чтобы он не ушел в lr1, lr2 итд
+        switch(choice) 
+        {
             case 1:
                 lr1();
                 break;
@@ -33,6 +37,12 @@ int main() {
                 break;
             default:
                 printf("drugie cifry\n");
+        }
+    }
+    while(choice != 0);
+    
+    return 0;
+}
         }
     } while(choice != 0);
     
