@@ -35,7 +35,7 @@ void lr1()
         }
         printf("1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
         scanf("%d", &T);
-        getchar(); //очистка буфера от символа
+        while (getchar() != '\n'); // очистка буфера
         } 
     }   
 
@@ -63,7 +63,7 @@ void lr2()
         printf("Summa pervyh %d elementov ryada: %.15f\n", N, sum); //выводим результат до 15 знака после запятой (включительно)
         printf("1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
         scanf("%d", &T);
-        getchar(); //очистка буфера от символа
+        while (getchar() != '\n'); // очистка буфера
     }
 }
 
@@ -132,7 +132,7 @@ void lr3()
         
         printf("1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
         scanf("%d", &T);
-        getchar(); //очистка буфера от символа
+        while (getchar() != '\n'); // очистка буфера
     }
 }
 
@@ -143,7 +143,8 @@ void lr4()
     char result[1000];
     int i, j = 0;
     while(T)
-    {    
+    {   
+        j = 0;
         printf("\n=== Ydalenie cifr v stoke ===\n");
         printf("Vvedite stroku: ");
         fgets(text, sizeof(text), stdin); // читаем строку с клавиатуры
@@ -160,7 +161,7 @@ void lr4()
         printf("Stroka bez cifr: %s\n", result);
         printf("1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
         scanf("%d", &T);
-        getchar(); //очистка буфера от символа
+        while (getchar() != '\n'); // очистка буфера
     }
 
 }
@@ -222,7 +223,7 @@ void lr5()
         }
         printf("1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
         scanf("%d", &T);
-        getchar(); //очистка буфера от символа
+        while (getchar() != '\n'); // очистка буфера
     }
 }
 void lr6() 
@@ -299,6 +300,6 @@ void lr6()
         }
         printf("1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
         scanf("%d", &T);
-        getchar(); //очистка буфера от символа
+        while (getchar() != '\n'); // очистка буфера
     }
 }
