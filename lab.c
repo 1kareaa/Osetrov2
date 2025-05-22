@@ -221,7 +221,8 @@ void lr5()
         {
             printf("%d ", arr[i]);
         }
-        printf("\n1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
+        printf("\n");
+        printf("1 (povtor)                 0 (vyxod)   \n"); //остаться или уйти в меню
         scanf("%d", &T);
         while (getchar() != '\n'); // очистка буфера
     }
